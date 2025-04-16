@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="alternate icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#4338ca" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMS Portal | Employee Management System</title>
+    <meta name="description" content="A comprehensive employee management system with dashboards for employees and administrators." />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Direct redirect to login if we're on the root page
+      if (window.location.pathname === '/' || window.location.pathname === '') {
+        window.location.href = '/login';
+      }
+      
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(registration => {
+              console.log('Service Worker registered: ', registration);
+            })
+            .catch(error => {
+              console.log('Service Worker registration failed: ', error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
