@@ -1,10 +1,5 @@
 # Employee Management System (EMS) Portal
 
-![EMS Portal](https://img.shields.io/badge/EMS-Portal-4f46e5)
-![React](https://img.shields.io/badge/React-18-61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4)
-
 A modern Employee Management System with separate interfaces for administrators and employees, built with React, TypeScript, and Tailwind CSS.
 
 ## 📋 Table of Contents
