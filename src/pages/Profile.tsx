@@ -9,7 +9,7 @@ const Profile = () => {
   const [formData, setFormData] = useState({
     phone: '+1 (555) 123-4567',
     address: '123 Tech Street, Silicon Valley, CA',
-    emergencyContact: 'Jane Doe - +1 (555) 987-6543',
+    emergencyContact: 'Rohit Yadav - +1 (555) 987-6543',
     joinDate: '2023-01-15',
     skills: ['React', 'TypeScript', 'Node.js', 'SQL'],
     education: 'Bachelor of Science in Computer Science'

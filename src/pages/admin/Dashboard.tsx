@@ -53,11 +53,11 @@ const Dashboard = () => {
 
   // Recent activities
   const recentActivities = [
-    { id: 1, user: 'John Doe', action: 'joined the company', time: '2 hours ago', type: 'new' },
-    { id: 2, user: 'Sarah Williams', action: 'requested leave', time: '3 hours ago', type: 'leave' },
-    { id: 3, user: 'Michael Johnson', action: 'updated profile', time: '5 hours ago', type: 'update' },
-    { id: 4, user: 'Emily Brown', action: 'completed training', time: '1 day ago', type: 'complete' },
-    { id: 5, user: 'Robert Davis', action: 'missed deadline', time: '1 day ago', type: 'missed' }
+    { id: 1, user: 'Aryan Yadav', action: 'joined the company', time: '2 hours ago', type: 'new' },
+    { id: 2, user: 'Chinmay Sawant', action: 'requested leave', time: '3 hours ago', type: 'leave' },
+    { id: 3, user: 'Jash Damania', action: 'updated profile', time: '5 hours ago', type: 'update' },
+    { id: 4, user: 'Bhargav Gajare', action: 'completed training', time: '1 day ago', type: 'complete' },
+    { id: 5, user: 'Om Awadhoot', action: 'missed deadline', time: '1 day ago', type: 'missed' }
   ];
 
   // Stats data

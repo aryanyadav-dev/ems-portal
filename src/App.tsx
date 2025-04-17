@@ -73,6 +73,34 @@ const AppRoutes = () => {
 };
 
 function App() {
+  // Force update user data on first load and clear cache
+  useEffect(() => {
+    // Clear existing user data to force re-login with updated info
+    localStorage.removeItem('emsUser');
+    sessionStorage.clear();
+    
+    // Force clear caches and reload all resources
+    if ('caches' in window) {
+      caches.keys().then(cacheNames => {
+        cacheNames.forEach(cacheName => {
+          caches.delete(cacheName);
+        });
+      });
+    }
+    
+    // Set a versioning timestamp to bust any browser caching
+    const timestamp = new Date().getTime();
+    localStorage.setItem('app_version_timestamp', timestamp.toString());
+    
+    // Force reload for any admin pages to ensure data consistency
+    if (window.location.pathname.includes('/admin')) {
+      // Add a small delay to ensure all hooks are processed
+      setTimeout(() => {
+        window.location.reload();
+      }, 100);
+    }
+  }, []);
+
   return (
     <AuthProvider>
       <BrowserRouter>

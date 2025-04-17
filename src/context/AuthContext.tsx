@@ -27,7 +27,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     // This would be replaced with actual authentication logic
     const mockUser: User = {
       id: '1',
-      name: 'John Doe',
+      name: 'Aryan Yadav',
       email: email,
       role: email.includes('admin') ? 'admin' : 'employee',
       department: 'Engineering',

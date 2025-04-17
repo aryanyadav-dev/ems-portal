@@ -40,8 +40,8 @@ const Employees = () => {
   const employees = [
     {
       id: '1',
-      name: 'John Doe',
-      email: 'john.doe@company.com',
+      name: 'Aryan Yadav',
+      email: 'aryan.yadav@company.com',
       phone: '+1 (555) 123-4567',
       position: 'Software Developer',
       department: 'Engineering',
@@ -51,8 +51,8 @@ const Employees = () => {
     },
     {
       id: '2',
-      name: 'Jane Smith',
-      email: 'jane.smith@company.com',
+      name: 'Chinmay Sawant',
+      email: 'chinmay.sawant@company.com',
       phone: '+1 (555) 987-6543',
       position: 'UX Designer',
       department: 'Design',
@@ -62,8 +62,8 @@ const Employees = () => {
     },
     {
       id: '3',
-      name: 'Michael Johnson',
-      email: 'michael.j@company.com',
+      name: 'Jash Damania',
+      email: 'jash.damania@company.com',
       phone: '+1 (555) 456-7890',
       position: 'Project Manager',
       department: 'Operations',
@@ -73,8 +73,8 @@ const Employees = () => {
     },
     {
       id: '4',
-      name: 'Sarah Williams',
-      email: 'sarah.w@company.com',
+      name: 'Bhargav Gajare',
+      email: 'bhargav.gajare@company.com',
       phone: '+1 (555) 789-0123',
       position: 'Marketing Specialist',
       department: 'Marketing',
@@ -84,8 +84,8 @@ const Employees = () => {
     },
     {
       id: '5',
-      name: 'Robert Brown',
-      email: 'robert.b@company.com',
+      name: 'Om Awadhoot',
+      email: 'om.awadhoot@company.com',
       phone: '+1 (555) 234-5678',
       position: 'Financial Analyst',
       department: 'Finance',
